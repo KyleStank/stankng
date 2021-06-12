@@ -5,4 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './dashboard-page.component.html',
   styleUrls: ['./dashboard-page.component.scss']
 })
-export class DashboardPageComponent {}
+export class DashboardPageComponent {
+  clicked(e: MouseEvent): void {
+    console.log(e);
+    alert('Clicked!');
+  }
+}
