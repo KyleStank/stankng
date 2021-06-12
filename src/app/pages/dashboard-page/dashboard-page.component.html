@@ -1,26 +1,31 @@
-<app-button
-  color="primary"
-  (onClick)="clicked($event)"
->
- app-button
-</app-button>
+<div>
+  <app-icon color="primary">person</app-icon>
+  <span class="text">Test Person Icon!</span>
+</div>
 
-<br />
-<br />
+<div>
+  <app-button
+    color="primary"
+    (onClick)="clicked($event)"
+  >
+    app-button
+  </app-button>
+</div>
 
-<app-button-flat
-  color="accent"
-  (onClick)="clicked($event)"
->
-  app-button-flat
-</app-button-flat>
+<div>
+  <app-button-flat
+    color="accent"
+    (onClick)="clicked($event)"
+  >
+    app-button-flat
+  </app-button-flat>
+</div>
 
-<br />
-<br />
-
-<app-button-raised
-  color="warn"
-  (onClick)="clicked($event)"
->
-  app-button-raised
-</app-button-raised>
+<div>
+  <app-button-raised
+    color="warn"
+    (onClick)="clicked($event)"
+  >
+    app-button-raised
+  </app-button-raised>
+</div>

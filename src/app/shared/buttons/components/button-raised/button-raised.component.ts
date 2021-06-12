@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { AbstractMaterialButtonComponent } from '../../abstracts';
+import { AbstractMaterialButtonComponent } from '@shared/buttons/abstracts';
 
 @Component({
   selector: 'app-button-raised',
