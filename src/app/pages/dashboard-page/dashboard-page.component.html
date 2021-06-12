@@ -1,31 +1,77 @@
-<div>
-  <app-icon color="primary">person</app-icon>
-  <span class="text">Test Person Icon!</span>
+<h1>
+  <strong>Dashboard</strong>
+</h1>
+<hr />
+
+<h2>Icons</h2>
+<div class="row">
+  <div class="col">
+    <h3>
+      <u [innerText]="'<app-icon />'"></u>
+    </h3>
+    <div>
+      <app-icon color="primary">person</app-icon>
+    </div>
+  </div>
 </div>
 
-<div>
-  <app-button
-    color="primary"
-    (onClick)="clicked($event)"
-  >
-    app-button
-  </app-button>
-</div>
+<hr />
 
-<div>
-  <app-button-flat
-    color="accent"
-    (onClick)="clicked($event)"
-  >
-    app-button-flat
-  </app-button-flat>
-</div>
+<h2>Buttons</h2>
+<div class="row">
+  <div class="col">
+    <h3>
+      <u [innerText]="'<app-button />'"></u>
+    </h3>
+    <div>
+      <app-button
+        color="primary"
+        (onClick)="clicked($event)"
+      >
+        Button Text
+      </app-button>
+    </div>
+  </div>
 
-<div>
-  <app-button-raised
-    color="warn"
-    (onClick)="clicked($event)"
-  >
-    app-button-raised
-  </app-button-raised>
+  <div class="col">
+    <h3>
+      <u [innerText]="'<app-button-flat />'"></u>
+    </h3>
+    <div>
+      <app-button-flat
+        color="accent"
+        (onClick)="clicked($event)"
+      >
+        Flat Button Text
+      </app-button-flat>
+    </div>
+  </div>
+
+  <div class="col">
+    <h3>
+      <u [innerText]="'<app-button-icon />'"></u>
+    </h3>
+    <div>
+      <app-button-icon
+        color="accent"
+        (onClick)="clicked($event)"
+      >
+        person_add
+      </app-button-icon>
+    </div>
+  </div>
+
+  <div class="col">
+    <h3>
+      <u [innerText]="'<app-button-raised />'"></u>
+    </h3>
+    <div>
+      <app-button-raised
+        color="warn"
+        (onClick)="clicked($event)"
+      >
+        Raised Button Text
+      </app-button-raised>
+    </div>
+  </div>
 </div>

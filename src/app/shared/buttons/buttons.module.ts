@@ -6,12 +6,14 @@ import { IconsModule } from '@shared/icons';
 import {
   ButtonComponent,
   ButtonFlatComponent,
+  ButtonIconComponent,
   ButtonRaisedComponent
 } from './components';
 
 const exportedDeclarations: any[] = [
   ButtonComponent,
   ButtonFlatComponent,
+  ButtonIconComponent,
   ButtonRaisedComponent
 ];
 
