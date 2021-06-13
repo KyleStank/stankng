@@ -1,4 +1,5 @@
 module.exports = {
+  important: true, // Adds !important to all utility classes.
   purge: {
     enabled: process.env.NODE_ENV === 'production',
     content: [
