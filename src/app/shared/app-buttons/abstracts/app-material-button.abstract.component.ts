@@ -1,10 +1,10 @@
 import { Directive, Input } from '@angular/core';
 import { IColor, IDisableRipple } from '@shared/interfaces';
 
-import { AbstractButtonComponent } from './button.abstract.component';
+import { AbstractAppButton } from './app-button.abstract.component';
 
 @Directive()
-export class AbstractMaterialButtonComponent extends AbstractButtonComponent implements IColor, IDisableRipple {
+export class AbstractAppMaterialButton extends AbstractAppButton implements IColor, IDisableRipple {
   @Input()
   color: string = 'primary';
 

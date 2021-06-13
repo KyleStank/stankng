@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { AbstractMaterialButtonComponent } from '@shared/buttons/abstracts';
+import { AbstractAppMaterialButton } from '@shared/app-buttons/abstracts';
 
 @Component({
-  selector: 'app-button-raised',
+  selector: 'app-button',
   template: `
     <button
-      mat-raised-button
+      mat-button
       [color]="color"
       [disabled]="disabled"
       [disableRipple]="disableRipple"
@@ -18,4 +18,4 @@ import { AbstractMaterialButtonComponent } from '@shared/buttons/abstracts';
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class ButtonRaisedComponent extends AbstractMaterialButtonComponent {}
+export class AppButton extends AbstractAppMaterialButton {}

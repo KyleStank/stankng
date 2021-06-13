@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
-import { AbstractMaterialButtonComponent } from '@shared/buttons/abstracts';
+import { AbstractAppMaterialButton } from '@shared/app-buttons/abstracts';
 
 @Component({
   selector: 'app-button-icon',
@@ -20,4 +20,4 @@ import { AbstractMaterialButtonComponent } from '@shared/buttons/abstracts';
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class ButtonIconComponent extends AbstractMaterialButtonComponent {}
+export class AppButtonIcon extends AbstractAppMaterialButton {}

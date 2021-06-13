@@ -4,17 +4,17 @@ import { MatButtonModule } from '@angular/material/button';
 
 import { IconsModule } from '@shared/icons';
 import {
-  ButtonComponent,
-  ButtonFlatComponent,
-  ButtonIconComponent,
-  ButtonRaisedComponent
+  AppButton,
+  AppButtonFlat,
+  AppButtonIcon,
+  AppButtonRaised
 } from './components';
 
 const exportedDeclarations: any[] = [
-  ButtonComponent,
-  ButtonFlatComponent,
-  ButtonIconComponent,
-  ButtonRaisedComponent
+  AppButton,
+  AppButtonFlat,
+  AppButtonIcon,
+  AppButtonRaised
 ];
 
 @NgModule({
@@ -22,4 +22,4 @@ const exportedDeclarations: any[] = [
   declarations: exportedDeclarations,
   exports: exportedDeclarations
 })
-export class ButtonsModule {}
+export class AppButtonsModule {}
