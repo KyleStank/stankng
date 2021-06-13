@@ -12,7 +12,7 @@ import { AbstractAppMaterialButton } from '@shared/app-buttons/abstracts';
       [disableRipple]="disableRipple"
       (click)="onClick.emit($event)"
     >
-      <app-icon [color]="color">
+      <app-icon>
         <ng-content></ng-content>
       </app-icon>
     </button>

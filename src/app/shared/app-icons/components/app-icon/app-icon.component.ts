@@ -24,7 +24,7 @@ import { IColor } from '@shared/interfaces';
 })
 export class AppIcon implements IColor {
   @Input()
-  color: string = 'primary';
+  color: string | undefined;
 
   @Input()
   inline: boolean = false;

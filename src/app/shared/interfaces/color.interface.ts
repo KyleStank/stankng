@@ -1,3 +1,3 @@
 export interface IColor {
-  color: string;
+  color: string | undefined;
 }
