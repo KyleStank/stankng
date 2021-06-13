@@ -15,14 +15,14 @@ import { IColor } from '@shared/interfaces';
       <ng-content></ng-content>
     </mat-icon>
   `,
-  styleUrls: ['icon.component.scss'],
+  styleUrls: ['app-icon.component.scss'],
   host: {
     'class': 'app-icon'
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class IconComponent implements IColor {
+export class AppIcon implements IColor {
   @Input()
   color: string = 'primary';
 

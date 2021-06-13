@@ -2,10 +2,10 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
-import { IconComponent } from './components';
+import { AppIcon } from './components';
 
 const exportedDeclarations: any[] = [
-  IconComponent
+  AppIcon
 ];
 
 @NgModule({
@@ -13,4 +13,4 @@ const exportedDeclarations: any[] = [
   declarations: exportedDeclarations,
   exports: exportedDeclarations
 })
-export class IconsModule {}
+export class AppIconsModule {}

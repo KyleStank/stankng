@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
-import { IconsModule } from '@shared/icons';
+import { AppIconsModule } from '@shared/app-icons';
 import {
   AppButton,
   AppButtonFlat,
@@ -18,7 +18,7 @@ const exportedDeclarations: any[] = [
 ];
 
 @NgModule({
-  imports: [CommonModule, MatButtonModule, IconsModule],
+  imports: [CommonModule, MatButtonModule, AppIconsModule],
   declarations: exportedDeclarations,
   exports: exportedDeclarations
 })
