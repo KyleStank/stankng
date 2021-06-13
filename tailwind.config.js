@@ -12,5 +12,11 @@ module.exports = {
   variants: {
     extend: {}
   },
+  corePlugins: {
+    // Preflight conflicts with @angular/material's base styles.
+    // Material's default styles cover everything Preflight covers.
+    // If you must use Preflight, please see https://tailwindcss.com/docs/plugins#adding-utilities for creating a custom plugin.
+    preflight: false
+  },
   plugins: []
 }
