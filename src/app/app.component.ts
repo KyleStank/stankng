@@ -27,7 +27,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * @description
    * Handles each event that is fired by Angular's router.
    *
    * @param event Router event to handle.
@@ -40,7 +39,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   /**
-   * @description
    * Configures the page's layout based on provided route-level data.
    *
    * @param routeData Data retrieved from the route.
