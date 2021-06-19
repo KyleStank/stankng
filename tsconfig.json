@@ -4,24 +4,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@core/*": [
-        "src/app/core/*"
-      ],
-      "@features/*": [
-        "src/app/features/*"
-      ],
-      "@pages/*": [
-        "src/app/pages/*"
-      ],
-      "@shared/*": [
-        "src/app/shared/*"
-      ],
-      "@environments/*": [
-        "src/environments/*"
-      ],
       "elegantng": [
-        "dist/elegantng/elegantng",
-        "dist/elegantng"
+        "dist/elegantng/public-api",
+        "projects/elegantng/src/public-api"
       ]
     },
     "outDir": "./dist/out-tsc",
