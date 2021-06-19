@@ -18,6 +18,10 @@
       ],
       "@environments/*": [
         "src/environments/*"
+      ],
+      "elegantng": [
+        "dist/elegantng/elegantng",
+        "dist/elegantng"
       ]
     },
     "outDir": "./dist/out-tsc",
