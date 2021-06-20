@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-card',
+  selector: 'stank-card',
   template: `<ng-content></ng-content>`,
-  styleUrls: ['app-card.component.scss'],
+  styleUrls: ['./card.component.scss'],
   host: {
-    'class': 'app-card mat-elevation-z2'
+    'class': 'stank-card mat-elevation-z2'
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class AppCard {}
+export class StankCard {}

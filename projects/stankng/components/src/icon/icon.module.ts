@@ -2,15 +2,15 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
-import { AppIcon } from './components';
+import { StankIcon } from './icon.component';
 
-const exportedDeclarations: any[] = [
-  AppIcon
+const moduleExports: any[] = [
+  StankIcon
 ];
 
 @NgModule({
   imports: [CommonModule, MatIconModule],
-  declarations: exportedDeclarations,
-  exports: exportedDeclarations
+  exports: moduleExports,
+  declarations: moduleExports
 })
-export class AppIconsModule {}
+export class StankIconModule {}

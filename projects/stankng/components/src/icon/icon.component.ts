@@ -1,9 +1,7 @@
 import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
 
-import { IColor } from '../../../interfaces';
-
 @Component({
-  selector: 'app-icon',
+  selector: 'stank-icon',
   template: `
     <mat-icon
       [color]="color"
@@ -15,14 +13,14 @@ import { IColor } from '../../../interfaces';
       <ng-content></ng-content>
     </mat-icon>
   `,
-  styleUrls: ['app-icon.component.scss'],
+  styleUrls: ['./icon.component.scss'],
   host: {
-    'class': 'app-icon'
+    'class': 'stank-icon'
   },
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None
 })
-export class AppIcon implements IColor {
+export class StankIcon {
   @Input()
   color: string | undefined;
 

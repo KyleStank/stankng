@@ -3,18 +3,18 @@
 </h1>
 <hr />
 
-<app-card>
+<stank-card>
   Hello, world!
-</app-card>
+</stank-card>
 
 <h2>Icons</h2>
 <div class="row">
   <div class="col">
     <h3>
-      <u [innerText]="'<app-icon />'"></u>
+      <u [innerText]="'<stank-icon />'"></u>
     </h3>
     <div>
-      <app-icon color="primary">person</app-icon>
+      <stank-icon color="primary">person</stank-icon>
     </div>
   </div>
 </div>
@@ -25,57 +25,57 @@
 <div class="row">
   <div class="col">
     <h3>
-      <u [innerText]="'<app-button />'"></u>
+      <u [innerText]="'<stank-button />'"></u>
     </h3>
     <div>
-      <app-button
+      <stank-button
         color="primary"
         (onClick)="clicked($event)"
       >
         Button Text
-      </app-button>
+      </stank-button>
     </div>
   </div>
 
   <div class="col">
     <h3>
-      <u [innerText]="'<app-button-flat />'"></u>
+      <u [innerText]="'<stank-button-flat />'"></u>
     </h3>
     <div>
-      <app-button-flat
+      <stank-button-flat
         color="accent"
         (onClick)="clicked($event)"
       >
         Flat Button Text
-      </app-button-flat>
+      </stank-button-flat>
     </div>
   </div>
 
   <div class="col">
     <h3>
-      <u [innerText]="'<app-button-icon />'"></u>
+      <u [innerText]="'<stank-button-icon />'"></u>
     </h3>
     <div>
-      <app-button-icon
+      <stank-button-icon
         color="accent"
         (onClick)="clicked($event)"
       >
         person_add
-      </app-button-icon>
+      </stank-button-icon>
     </div>
   </div>
 
   <div class="col">
     <h3>
-      <u [innerText]="'<app-button-raised />'"></u>
+      <u [innerText]="'<stank-button-raised />'"></u>
     </h3>
     <div>
-      <app-button-raised
+      <stank-button-raised
         color="warn"
         (onClick)="clicked($event)"
       >
         Raised Button Text
-      </app-button-raised>
+      </stank-button-raised>
     </div>
   </div>
 </div>
