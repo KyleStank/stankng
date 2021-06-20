@@ -11,6 +11,10 @@
       "@stankng/services": [
         "dist/stankng/services",
         "projects/stankng/services/src/public-api"
+      ],
+      "@stankng/utils": [
+        "dist/stankng/utils",
+        "projects/stankng/utils/src/public-api"
       ]
     },
     "outDir": "./dist/out-tsc",
