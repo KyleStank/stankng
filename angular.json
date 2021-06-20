@@ -145,6 +145,37 @@
           }
         }
       }
+    },
+    "@stankng/services": {
+      "projectType": "library",
+      "root": "projects/stankng/services",
+      "sourceRoot": "projects/stankng/services/src",
+      "prefix": "stank",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/stankng/services/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/stankng/services/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/stankng/services/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/stankng/services/src/test.ts",
+            "tsConfig": "projects/stankng/services/tsconfig.spec.json",
+            "karmaConfig": "projects/stankng/services/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "stankng-demo"

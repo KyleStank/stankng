@@ -7,6 +7,10 @@
       "@stankng/components": [
         "dist/stankng/components",
         "projects/stankng/components/src/public-api"
+      ],
+      "@stankng/services": [
+        "dist/stankng/services",
+        "projects/stankng/services/src/public-api"
       ]
     },
     "outDir": "./dist/out-tsc",
