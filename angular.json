@@ -23,6 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "deleteOutputPath": true,
             "outputPath": "dist/stankng-demo",
             "index": "projects/stankng-demo/src/index.html",
             "main": "projects/stankng-demo/src/main.ts",
