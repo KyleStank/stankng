@@ -1,14 +1,14 @@
 {
-  "name": "elegantng",
+  "name": "@stankng/components",
   "version": "0.0.1",
   "author": "Kyle Stankovich",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/KyleStank/elegantng"
+    "url": "https://github.com/KyleStank/stankng"
   },
   "keywords": [
-    "elegant",
+    "stank",
     "ng",
     "angular"
   ],

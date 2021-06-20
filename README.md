@@ -1,4 +1,4 @@
-# **angular-starter-project**
+# **StankNG**
 
 ```
 Kickstart a new Angular v12+ project with readability, maintainability, and simplicity in mind.

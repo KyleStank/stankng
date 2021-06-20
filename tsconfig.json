@@ -4,9 +4,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "elegantng": [
-        "dist/elegantng",
-        "projects/elegantng/src/public-api"
+      "@stankng/components": [
+        "dist/stankng/components",
+        "projects/stankng/components/src/public-api"
       ]
     },
     "outDir": "./dist/out-tsc",

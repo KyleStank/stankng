@@ -6,142 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "elegantng": {
-      "projectType": "library",
-      "root": "projects/elegantng",
-      "sourceRoot": "projects/elegantng/src",
-      "prefix": "eng",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/elegantng/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/elegantng/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/elegantng/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/elegantng/src/test.ts",
-            "tsConfig": "projects/elegantng/tsconfig.spec.json",
-            "karmaConfig": "projects/elegantng/karma.conf.js"
-          }
-        }
-      }
-    },
-    "angular-starter-project": {
-      "projectType": "application",
-      "schematics": {
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/angular-starter-project",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles/main.scss"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.dev.ts"
-                }
-              ]
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "angular-starter-project:build:production"
-            },
-            "development": {
-              "browserTarget": "angular-starter-project:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "angular-starter-project:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles/main.scss"
-            ],
-            "scripts": []
-          }
-        }
-      }
-    },
-    "elegantng-demo": {
+    "stankng-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -151,25 +16,25 @@
           "strict": true
         }
       },
-      "root": "projects/elegantng-demo",
-      "sourceRoot": "projects/elegantng-demo/src",
+      "root": "projects/stankng-demo",
+      "sourceRoot": "projects/stankng-demo/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/elegantng-demo",
-            "index": "projects/elegantng-demo/src/index.html",
-            "main": "projects/elegantng-demo/src/main.ts",
-            "polyfills": "projects/elegantng-demo/src/polyfills.ts",
-            "tsConfig": "projects/elegantng-demo/tsconfig.app.json",
+            "outputPath": "dist/stankng-demo",
+            "index": "projects/stankng-demo/src/index.html",
+            "main": "projects/stankng-demo/src/main.ts",
+            "polyfills": "projects/stankng-demo/src/polyfills.ts",
+            "tsConfig": "projects/stankng-demo/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/elegantng-demo/src/favicon.ico",
-              "projects/elegantng-demo/src/assets"
+              "projects/stankng-demo/src/favicon.ico",
+              "projects/stankng-demo/src/assets"
             ],
             "styles": [
-              "projects/elegantng-demo/src/styles/styles.scss"
+              "projects/stankng-demo/src/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -189,8 +54,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/elegantng-demo/src/environments/environment.ts",
-                  "with": "projects/elegantng-demo/src/environments/environment.prod.ts"
+                  "replace": "projects/stankng-demo/src/environments/environment.ts",
+                  "with": "projects/stankng-demo/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -204,8 +69,8 @@
               "namedChunks": true,
               "fileReplacements": [
                 {
-                  "replace": "projects/elegantng-demo/src/environments/environment.ts",
-                  "with": "projects/elegantng-demo/src/environments/environment.dev.ts"
+                  "replace": "projects/stankng-demo/src/environments/environment.ts",
+                  "with": "projects/stankng-demo/src/environments/environment.dev.ts"
                 }
               ]
             }
@@ -216,10 +81,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "elegantng-demo:build:production"
+              "browserTarget": "stankng-demo:build:production"
             },
             "development": {
-              "browserTarget": "elegantng-demo:build:development"
+              "browserTarget": "stankng-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -227,29 +92,60 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "elegantng-demo:build"
+            "browserTarget": "stankng-demo:build"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/elegantng-demo/src/test.ts",
-            "polyfills": "projects/elegantng-demo/src/polyfills.ts",
-            "tsConfig": "projects/elegantng-demo/tsconfig.spec.json",
-            "karmaConfig": "projects/elegantng-demo/karma.conf.js",
+            "main": "projects/stankng-demo/src/test.ts",
+            "polyfills": "projects/stankng-demo/src/polyfills.ts",
+            "tsConfig": "projects/stankng-demo/tsconfig.spec.json",
+            "karmaConfig": "projects/stankng-demo/karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/elegantng-demo/src/favicon.ico",
-              "projects/elegantng-demo/src/assets"
+              "projects/stankng-demo/src/favicon.ico",
+              "projects/stankng-demo/src/assets"
             ],
             "styles": [
-              "projects/elegantng-demo/src/styles/styles.scss"
+              "projects/stankng-demo/src/styles/styles.scss"
             ],
             "scripts": []
           }
         }
       }
+    },
+    "@stankng/components": {
+      "projectType": "library",
+      "root": "projects/stankng/components",
+      "sourceRoot": "projects/stankng/components/src",
+      "prefix": "stank",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/stankng/components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/stankng/components/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/stankng/components/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/stankng/components/src/test.ts",
+            "tsConfig": "projects/stankng/components/tsconfig.spec.json",
+            "karmaConfig": "projects/stankng/components/karma.conf.js"
+          }
+        }
+      }
     }
   },
-  "defaultProject": "elegantng-demo"
+  "defaultProject": "stankng-demo"
 }
